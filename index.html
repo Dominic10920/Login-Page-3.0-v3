@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login 3.0</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTuklas Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="loginPage">
+        <h1>EduTuklas Login</h1>
+        <form id="loginForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="grade">Grade:</label>
+            <select id="grade" required>
+                <option value="" disabled selected>Select your grade</option>
+                <option value="Grade 11">Grade 11</option>
+                <option value="Grade 12">Grade 12</option>
+            </select>
+
+            <label for="strand">Strand:</label>
+            <select id="strand" required>
+                <option value="" disabled selected>Select your strand</option>
+                <option value="STEM">STEM</option>
+                <option value="HUMSS">HUMSS</option>
+                <option value="ABM">ABM</option>
+                <option value="ICT">ICT</option>
+                <option value="IA">IA</option>
+                <option value="HE">HE</option>
+            </select>
+
+            <label for="section">Section:</label>
+            <input type="text" id="section" placeholder="Enter your section" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="output"></div>
+    </div>
+
+    <div class="success-container" id="successPage" style="display: none;">
+        <h1>Login Successful!</h1>
+        <div id="userInfo"></div>
+        <div id="dynamicButtonContainer"></div>
+        <button id="signOutButton">Sign Out</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

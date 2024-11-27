@@ -1,0 +1,82 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #8e44ad, #3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Centered container */
+.login-container, .success-container {
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #333;
+}
+
+/* Title */
+.login-container h1, .success-container h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Form labels and inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input, select {
+    width: 100%; /* Ensures all inputs and dropdowns are the same width */
+    max-width: 300px; /* Optional: Ensures consistent sizing */
+    padding: 10px;
+    margin: 0 auto 15px; /* Centers the inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block; /* Ensures proper centering */
+    box-sizing: border-box;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Output display */
+#output {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+#signOutButton {
+    background-color: #e74c3c;
+    margin-top: 20px;
+}
+
+#signOutButton:hover {
+    background-color: #c0392b;
+}
